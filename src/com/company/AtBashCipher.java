@@ -15,14 +15,13 @@ class AtBashCipher implements Cipher {
 
     @Override
     public String decode(String message) {
-        return null;
+        return encode(message);
     }
 
     @Override
     public String encode(String message) {
 
         StringBuilder encode = new StringBuilder();
-
 
         for (char c: message.toLowerCase().toCharArray()
         ) {
